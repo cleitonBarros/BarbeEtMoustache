@@ -1,0 +1,34 @@
+@use '../1-base/variables'
+@use '../1-base/mixin'
+
+.sidebar
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 200
+  width: 50%
+  height: 100vh
+  background: white
+
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-evenly
+  
+  transform: translateX(-100%)
+  transition: all 0.5s
+
+  @include mixin.tablet
+    display: none
+    visibility: hidden
+
+
+  ul
+    height: 500px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    li
+      a
+        font-size: 1.25rem
