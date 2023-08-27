@@ -1,0 +1,199 @@
+@use '../1-base/variables'
+@use '../1-base/mixin'
+
+main
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-direction: column
+    width: 100%
+    padding: 7rem 6%
+
+    align-items: center
+    row-gap: 3rem
+    @include mixin.laptop
+      flex-direction: row-reverse
+      padding: 7rem 10%
+      column-gap: 3rem
+
+    .text
+      display: flex
+      flex-direction: column
+      max-width: 560px
+      align-items: center
+      gap: 1.5rem
+      @include mixin.laptop
+        align-items: flex-start
+
+      h2
+        font-size: 2rem
+        font-weight: 700
+        colo: variables.$title
+        text-align: center
+        @include mixin.laptop
+          text-align: left
+
+      p
+        font-size: 1.25rem
+        colo: variables.$text
+        text-align: center
+        @include mixin.laptop
+          text-align: left
+
+      a
+        padding: 1.5rem 1.75rem
+        border-radius: 8px
+        background: variables.$primary-color
+        color: variables.$tertiary-color
+        font-weight: 500
+
+        display: inline-flex
+        align-items: center
+        justify-content: center
+
+    .image
+      width: auto
+      display: flex
+      align-items: center
+      justify-content: center
+
+      img
+        width: 100%
+
+        @include mixin.laptop
+        width: 100%
+        min-width: 25rem
+
+  .container#about
+    align-items: flex
+    background: variables.$tertiary-color
+    @include mixin.laptop
+      justify-content: flex-end
+
+    h2
+      font-size: 2.25rem
+      font-weight: 700
+      text-transform: uppercase
+
+  .container#service
+    @include mixin.laptop
+      flex-direction: column
+    .text
+      @include mixin.laptop
+        align-items: center
+    p
+      @include mixin.laptop
+        text-align: center
+      span
+        color: variables.$primary-color
+        font-size: 1.30rem
+
+  .container#contact
+    background: variables.$secondary-color
+    .adress
+      ul
+        display: flex
+        flex-direction: column
+        gap: 2rem
+        li
+          font-size: 1.25rem
+          font-weight: 600
+
+.marquee
+  --gap: 0rem
+  position: relative
+  display: flex
+  overflow: hidden
+  user-select: none
+  gap: var(--gap)
+  width: 100%
+
+  &__content
+    flex-shrink: 0
+    display: flex
+    justify-content: space-around
+    gap: var(--gap)
+    min-width: fit-content
+    animation: scroll 15s linear infinite
+
+    & > *
+      flex: 0 0 auto
+      color: #1f1f1f
+      font-size: 26px
+      font-weight: 600
+      margin: 2px
+      padding: 1rem 2rem
+      border-radius: 0.25rem
+      text-align: center
+
+.marquee--pos-absolute
+  .marquee__content:last-child
+    position: absolute
+    top: 0
+    left: 0
+
+.enable-animation
+  .marquee--pos-absolute
+    .marquee__content:last-child
+      animation-name: scroll-abs
+  &.reverse
+    .marquee
+      &__content
+          animation: scroll-reverse 15s linear infinite
+
+  @keyframes scroll
+    from
+      transform: translateX(0)
+    to
+      transform: translateX(calc(-100% - var(--gap)))
+
+  @keyframes scroll-reverse
+    from
+      transform: translateX(calc(-100% - var(--gap)))
+    to
+      transform: translateX(0)
+
+  @keyframes scroll-abs
+    from
+      transform: translateX(calc(100% + var(--gap)))
+
+    to
+      transform: translateX(0)
+
+.cards
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: center
+  gap: 3rem
+  .card
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    max-width: 22rem 
+    text-align: center
+    gap: 1rem
+    padding: 3.625rem 2rem
+    box-shadow: 0 0 12px rgba(0,0,0, 0.08)
+    border-radius: 15px
+    @include mixin.laptop
+
+
+    h2
+      font-family: 'Poppins', sans-serif
+      font-size: 1.75rem
+      font-weight: 700
+      color: variables.$primary-color
+      text-transform: uppercase
+
+    p
+      width: 80%
+      color: variables.$text
+
+
+  
+  
+  
+      

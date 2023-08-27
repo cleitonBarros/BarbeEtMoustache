@@ -1,0 +1,49 @@
+@use '../1-base/variables'
+@use '../1-base/mixin'
+
+footer
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-direction: column
+  width: 100%
+  padding: 7rem 6%
+  background: variables.$primary-color
+
+  align-items: center
+  row-gap: 3rem
+  @include mixin.laptop
+    flex-direction: row
+    padding: 7rem 10%
+    column-gap: 3rem
+
+  .copy
+    color: variables.$bg-color
+    display: flex
+    flex-direction: column
+    max-width: 400px
+
+    a
+      font-family: 'Poppins', sans-serif
+      font-size: 1.75rem
+      font-weight: 700
+      color: variables.$bg-color
+      cursor: pointer
+      margin-bottom: 2rem 
+
+      span
+        color: variables.$title
+    
+    p
+      font-weight: 500
+      font-size: 1.5rem
+      margin-bottom: 1rem 
+
+  .social
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 2rem
+
+    img
+      width: 2.75rem

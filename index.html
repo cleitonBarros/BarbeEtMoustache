@@ -1,16 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <title>barbe et moustache</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Lato:wght@300;400;700;900&family=Playfair+Display:wght@700&family=Poppins:wght@700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css" />
+
+  <title>barbe et moustache</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header-nav">
+      <a title="logo" href="#" class="header-nav-logo">Barbe<span>Et</span>Moustache.</a>
+      <ul>
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#about">À propos </a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <img class="menu-hamburger" src="./img/list.svg" alt="menu hamburguer" title="menu hamburguer" />
+    <img class="menu-close" src="./img/x.svg" alt="close" title="fechar" />
+
+    <div class="sidebar">
+      <a title="logo" href="#" class="header-nav-logo">Barbe<span>Et</span>Moustache.</a>
+      <ul>
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#about">À propos </a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section id="home" class="container">
+      <div class="image">
+        <img src="./img/picture_1.jpg" alt="" />
+      </div>
+      <div class="text">
+        <h2>Santé naturelle pour</br>
+          vos cheveux,votre barbe </br>
+          et votre peau</h2>
+        <p>
+          Un barbier exclusif à Marseille, spécialisé dans les soins naturels
+        </p>
+        <a href="#">Réserver un rendez-vous</a>
+      </div>
+    </section>
+    <section class="enable-animation">
+      <div class="marquee">
+        <ul class="marquee__content">
+          <li>10% OFF SUR LA PREMIER TRAITEMENT </li>
+          <li>BARBE ET MOUSTACHE </li>
+          <li>10% OFF SUR LA PREMIER TRAITEMENT </li>
+          <li>BARBE ET MOUSTACHE </li>
+        </ul>
+        <ul class="marquee__content">
+          <li>10% OFF SUR LA PREMIER TRAITEMENT </li>
+          <li>BARBE ET MOUSTACHE </li>
+          <li>10% OFF SUR LA PREMIER TRAITEMENT </li>
+          <li>BARBE ET MOUSTACHE </li>
+        </ul>
+      </div>
+    </section>
+    <section id="about" class="container">
+
+      <div class="text">
+        <h2>À propo de nous</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Sequi cumque omnis iusto, accusamus consequatur,
+          aperiam ex maiores consectetur earum quas voluptatibus. Fugiat natus rerum non illo distinctio sed eveniet
+          vel!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Sequi cumque omnis iusto, accusamus consequatur,
+          aperiam ex maiores consectetur earum quas voluptatibus. Fugiat natus rerum non illo distinctio sed eveniet
+          vel!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Sequi cumque omnis iusto, accusamus consequatur,
+          aperiam ex maiores consectetur earum quas voluptatibus. Fugiat natus rerum non illo distinctio sed eveniet
+          vel!
+        </p>
+      </div>
+      <div class="image">
+        <img src="./img/picture_3.jpg" alt="" />
+      </div>
+    </section>
+    <section class="enable-animation reverse">
+      <div class="marquee">
+        <ul class="marquee__content">
+          <li>10% OFF SUR LA PREMIER TRAITEMENT </li>
+          <li>BARBE ET MOUSTACHE </li>
+          <li>10% OFF SUR LA PREMIER TRAITEMENT </li>
+          <li>BARBE ET MOUSTACHE </li>
+        </ul>
+        <ul class="marquee__content">
+          <li>10% OFF SUR LA PREMIER TRAITEMENT </li>
+          <li>BARBE ET MOUSTACHE </li>
+          <li>10% OFF SUR LA PREMIER TRAITEMENT </li>
+          <li>BARBE ET MOUSTACHE </li>
+        </ul>
+      </div>
+    </section>
+    <section id="service" class="container">
+
+      <div class="text">
+        <h2>Services</h2>
+        <p>
+          Avec plus de 10 ans sur le marché, <strong>Barbe<span>Et</span>Moustache</strong> a déjà conquit des clients
+          de pays grâce à des traitements
+          exclusifs et totalement naturels.
+        </p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <img src="./img/hair-cutting.png" alt="">
+          <h2>Thérapie capillaire</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas tempore, maiores velit libero doloribus
+            voluptatibus pariatur.</p>
+        </div>
+        <div class="card">
+          <img src="./img/tesoura-e-pente.png" alt="">
+          <h2>Coupes</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas tempore, maiores velit libero doloribus
+            voluptatibus pariatur.</p>
+        </div>
+        <div class="card">
+          <img src="./img/shampoo-para-animais-de-estimacao.png" alt="">
+          <h2>Traitement</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas tempore, maiores velit libero doloribus
+            voluptatibus pariatur.</p>
+        </div>
+      </div>
+    </section>
+    <section class="enable-animation">
+      <div class="marquee">
+        <ul class="marquee__content">
+          <li>10% OFF SUR LA PREMIER TRAITEMENT </li>
+          <li>BARBE ET MOUSTACHE </li>
+          <li>10% OFF SUR LA PREMIER TRAITEMENT </li>
+          <li>BARBE ET MOUSTACHE </li>
+        </ul>
+        <ul class="marquee__content">
+          <li>10% OFF SUR LA PREMIER TRAITEMENT </li>
+          <li>BARBE ET MOUSTACHE </li>
+          <li>10% OFF SUR LA PREMIER TRAITEMENT </li>
+          <li>BARBE ET MOUSTACHE </li>
+        </ul>
+      </div>
+    </section>
+    <section style="height: 300px;  background-image: url('./img/picture_2.jpg');    
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;" class="container">
+    </section>
+    <section id="contact" class="container">
+
+      <div class="text">
+        <h2 class="title">Contactez-nous</h2>
+        <p>Entrez en contact avec BarbeEtMoustache, nous voulons dissiper vos doutes, entendre vos critiques et
+          suggestions.</p>
+        <a class="btn" href="https://api.whatsapp.com/send/?phone=+33939391489 text&app_absent=0">Entrez en contact</a>
+      </div>
+
+      <div class="adress">
+        <ul>
+          <li>(93) 939 1489</li>
+          <li>Nº83 Rue Saint-Sébastien, Marseille, France</li>
+          <li>barbeetmoustachecontact@hotmail.com</li>
+        </ul>
+      </div>
+
+    </section>
+  </main>
+  <footer class="container">
+    <div class="copy">
+      <a href="#home">Barbe<span>Et</span>Moustache.</a>
+      <p>©2021 BarbeEtMoustache </p>
+      <p>Todos os direitos reservados.</p>
+    </div>
+    <div class="social">
+      <a href="https://instagram.com" target="_blank">
+        <img src="./img/instagram-logo.svg" alt="">
+      </a>
+      <a href="https://facebook.com" target="_blank">
+        <img src="./img/facebook-logo.svg" alt="">
+      </a>
+      <a href="https://youtube.com.br" target="_blank">
+        <img src="./img/youtube-logo.svg" alt="">
+      </a>
+    </div>
+
+  </footer>
+  <script src="./script/main.js"></script>
+</body>
+
 </html>

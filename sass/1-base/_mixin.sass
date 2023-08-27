@@ -1,0 +1,25 @@
+@mixin flex-between
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+@mixin flex-center
+  display: flex
+  align-items: center
+  justify-content: center
+
+@mixin mobile
+  @media(min-width: 425px)
+    @content
+
+@mixin tablet
+  @media(min-width: 765px)
+    @content
+
+@mixin laptop
+  @media(min-width: 1024px)
+    @content
+
+@mixin desktop
+  @media(min-width: 1280px)
+    @content
