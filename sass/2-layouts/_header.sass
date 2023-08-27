@@ -1,2 +1,90 @@
 @use '../1-base/variables'
+@use '../1-base/mixin'
+
+.header
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 100
+
+  width: 100%
+  padding: 0 6%
+  background: variables.$bg-color
+  border-bottom: 1px solid #c0bfbf
+  @include mixin.flex-center
+  @include mixin.laptop
+    padding: 0 10%
+
+  &-nav
+    width: 100%
+    height: 5rem
+    @include mixin.flex-between
+
+    &-logo
+      font-family: 'Poppins', sans-serif
+      font-size: 1.25rem
+      font-weight: 700
+      color: variables.$title
+
+      span
+        color: variables.$primary-color
+
+  ul
+    @include mixin.flex-between
+    display: none
+    gap: 1.5rem
+    @include mixin.tablet
+      display: flex
+
+    li
+      a
+        font-family: 'Lato', sans-serif
+        font-weight: 500
+        font-size: 1rem
+        color: variables.$title
+        position: relative
+        transition: color 0.5s
+        &::after
+          content: ""
+          position: absolute
+          left: 0
+          bottom: -2rem
+          background: variables.$primary-color
+
+          width: 0%
+          height: 3px
+          transition: width 0.5s
+
+        &:hover
+          color: variables.$primary-color
+
+          &::after
+            width: 100%
+
+  .menu-hamburger
+    cursor: pointer
+
+    @include mixin.tablet
+      display: none
+      visibility: hidden
+
+    &.hidden
+      display: none
+      visibility: hidden
+      & ~ .sidebar
+        transform: translateX(0)
+      
+      
+
+  .menu-close
+    cursor: pointer
+    display: none
+
+    @include mixin.tablet
+      display: none
+      visibility: hidden
+
+    &.active
+      display: block
+
   
