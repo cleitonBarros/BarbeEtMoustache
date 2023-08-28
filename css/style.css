@@ -157,14 +157,14 @@ main .container {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  padding: 7rem 6%;
+  padding: 11rem 6%;
   align-items: center;
   row-gap: 3rem;
 }
 @media (min-width: 1024px) {
   main .container {
     flex-direction: row-reverse;
-    padding: 7rem 10%;
+    padding: 11rem 10%;
     column-gap: 3rem;
   }
 }
@@ -219,8 +219,11 @@ main .container .image {
 }
 main .container .image img {
   width: 100%;
-  width: 100%;
-  min-width: 25rem;
+}
+@media (min-width: 1024px) {
+  main .container .image img {
+    min-width: 25rem;
+  }
 }
 main .container#about {
   align-items: flex;
@@ -258,14 +261,22 @@ main .container#service p span {
 main .container#contact {
   background: #9b8361;
 }
-main .container#contact .adress ul {
+main .container#contact .adress {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  max-width: 560px;
+  align-items: center;
+  gap: 1.5rem;
 }
-main .container#contact .adress ul li {
-  font-size: 1.25rem;
-  font-weight: 600;
+@media (min-width: 1024px) {
+  main .container#contact .adress {
+    align-items: flex-start;
+  }
+}
+@media (min-width: 1024px) and (min-width: 765px) {
+  main .container#contact .adress p {
+    font-size: 1.25rem;
+  }
 }
 
 .marquee {
@@ -390,11 +401,16 @@ footer .copy {
 }
 footer .copy a {
   font-family: "Poppins", sans-serif;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #fafafa;
   cursor: pointer;
   margin-bottom: 2rem;
+}
+@media (min-width: 1024px) {
+  footer .copy a {
+    font-size: 1.75rem;
+  }
 }
 footer .copy a span {
   color: #222;
@@ -412,6 +428,10 @@ footer .social {
 }
 footer .social img {
   width: 2.75rem;
+}
+
+#home, #about, #service {
+  visibility: hidden;
 }
 
 .btn {

@@ -8,13 +8,13 @@ main
     align-items: center
     flex-direction: column
     width: 100%
-    padding: 7rem 6%
+    padding: 11rem 6%
 
     align-items: center
     row-gap: 3rem
     @include mixin.laptop
       flex-direction: row-reverse
-      padding: 7rem 10%
+      padding: 11rem 10%
       column-gap: 3rem
 
     .text
@@ -62,8 +62,7 @@ main
         width: 100%
 
         @include mixin.laptop
-        width: 100%
-        min-width: 25rem
+          min-width: 25rem
 
   .container#about
     align-items: flex
@@ -91,14 +90,18 @@ main
 
   .container#contact
     background: variables.$secondary-color
+
     .adress
-      ul
-        display: flex
-        flex-direction: column
-        gap: 2rem
-        li
-          font-size: 1.25rem
-          font-weight: 600
+      display: flex
+      flex-direction: column
+      max-width: 560px
+      align-items: center
+      gap: 1.5rem
+      @include mixin.laptop
+        align-items: flex-start
+        p
+          @include mixin.tablet
+            font-size: 1.25rem
 
 .marquee
   --gap: 0rem
@@ -140,7 +143,7 @@ main
   &.reverse
     .marquee
       &__content
-          animation: scroll-reverse 15s linear infinite
+        animation: scroll-reverse 15s linear infinite
 
   @keyframes scroll
     from
@@ -172,14 +175,13 @@ main
     flex-direction: column
     align-items: center
     justify-content: center
-    max-width: 22rem 
+    max-width: 22rem
     text-align: center
     gap: 1rem
     padding: 3.625rem 2rem
     box-shadow: 0 0 12px rgba(0,0,0, 0.08)
     border-radius: 15px
     @include mixin.laptop
-
 
     h2
       font-family: 'Poppins', sans-serif
@@ -191,9 +193,3 @@ main
     p
       width: 80%
       color: variables.$text
-
-
-  
-  
-  
-      

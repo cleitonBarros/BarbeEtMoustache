@@ -22,22 +22,23 @@ footer
     display: flex
     flex-direction: column
     max-width: 400px
-
+    
     a
       font-family: 'Poppins', sans-serif
-      font-size: 1.75rem
+      font-size: 1.5rem
       font-weight: 700
       color: variables.$bg-color
       cursor: pointer
-      margin-bottom: 2rem 
-
+      margin-bottom: 2rem
+      @include mixin.laptop
+        font-size: 1.75rem
       span
         color: variables.$title
-    
+
     p
       font-weight: 500
       font-size: 1.5rem
-      margin-bottom: 1rem 
+      margin-bottom: 1rem
 
   .social
     display: flex
