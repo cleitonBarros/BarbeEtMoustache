@@ -41,16 +41,28 @@ main
         @include mixin.laptop
           text-align: left
 
+        &::first-letter
+          font-size: 2rem
+          font-weight: bold
+          color: variables.$primary-color
+
+
       a
         padding: 1.5rem 1.75rem
         border-radius: 8px
         background: variables.$primary-color
         color: variables.$tertiary-color
         font-weight: 500
-
+        font-size: 1.25rem
+        font-family: 'Fredoka', sans-serif
         display: inline-flex
         align-items: center
         justify-content: center
+        transition: all 0.5s
+
+        &:hover
+          filter: brightness(1.1)
+          
 
     .image
       width: auto
@@ -176,6 +188,7 @@ main
     align-items: center
     justify-content: center
     max-width: 22rem
+    height: 31rem
     text-align: center
     gap: 1rem
     padding: 3.625rem 2rem
@@ -191,5 +204,6 @@ main
       text-transform: uppercase
 
     p
+      font-size: 1.25rem
       width: 80%
       color: variables.$text

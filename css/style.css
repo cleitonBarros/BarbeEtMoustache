@@ -9,14 +9,28 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   background-color: #fafafa;
+  overflow-x: hidden;
 }
 
 button {
   cursor: pointer;
+}
+
+html ::-webkit-scrollbar {
+  width: 10px;
+}
+
+html ::-webkit-scrollbar-thumb {
+  background: #633309;
+}
+
+html ::-webkit-scrollbar-track {
+  background: #9b8361;
 }
 
 .header {
@@ -201,15 +215,26 @@ main .container .text p {
     text-align: left;
   }
 }
+main .container .text p::first-letter {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #633309;
+}
 main .container .text a {
   padding: 1.5rem 1.75rem;
   border-radius: 8px;
   background: #633309;
   color: #ffffff;
   font-weight: 500;
+  font-size: 1.25rem;
+  font-family: "Fredoka", sans-serif;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.5s;
+}
+main .container .text a:hover {
+  filter: brightness(1.1);
 }
 main .container .image {
   width: auto;
@@ -357,6 +382,7 @@ main .container#contact .adress {
   align-items: center;
   justify-content: center;
   max-width: 22rem;
+  height: 31rem;
   text-align: center;
   gap: 1rem;
   padding: 3.625rem 2rem;
@@ -371,6 +397,7 @@ main .container#contact .adress {
   text-transform: uppercase;
 }
 .cards .card p {
+  font-size: 1.25rem;
   width: 80%;
   color: #757575;
 }
@@ -430,7 +457,12 @@ footer .social img {
   width: 2.75rem;
 }
 
-#home, #about, #service {
+.title,
+.paragraph,
+.image,
+.card,
+.banner,
+.marquee {
   visibility: hidden;
 }
 

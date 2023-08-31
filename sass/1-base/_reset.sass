@@ -9,9 +9,21 @@
   text-decoration: none
 html
   scroll-behavior: smooth
-  
+  overflow-x: hidden
+
 body
   background-color: variables.$bg-color
+  overflow-x: hidden
+
 
 button
   cursor: pointer
+
+html ::-webkit-scrollbar 
+  width: 10px
+
+html ::-webkit-scrollbar-thumb 
+  background: variables.$primary-color
+html ::-webkit-scrollbar-track 
+  background: variables.$secondary-color
+  
