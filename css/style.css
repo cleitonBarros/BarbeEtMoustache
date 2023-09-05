@@ -155,11 +155,19 @@ html ::-webkit-scrollbar-track {
     visibility: hidden;
   }
 }
+.sidebar a {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #222;
+}
 .sidebar ul {
+  height: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 5rem;
 }
 .sidebar ul li a {
   font-size: 1.25rem;
@@ -231,7 +239,6 @@ main .container .text a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.5s;
 }
 main .container .text a:hover {
   filter: brightness(1.1);
@@ -462,7 +469,8 @@ footer .social img {
 .image,
 .card,
 .banner,
-.marquee {
+.marquee,
+.botao {
   visibility: hidden;
 }
 

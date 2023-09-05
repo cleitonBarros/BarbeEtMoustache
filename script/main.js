@@ -13,7 +13,6 @@ closemenu.addEventListener("click", () => {
 ScrollReveal({
   distance: "60px",
   duration: 1500,
-  reset: true,
 });
 ScrollReveal().reveal(".title", { delay: 300, origin: "top" });
 ScrollReveal().reveal(".paragraph", { delay: 450, origin: "left" });
