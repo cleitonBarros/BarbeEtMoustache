@@ -376,6 +376,14 @@ main .container#contact .adress {
   }
 }
 
+#service article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  justify-content: center;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -443,7 +451,7 @@ footer .copy a {
 }
 @media (min-width: 1024px) {
   footer .copy a {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
   }
 }
 footer .copy a span {
@@ -451,7 +459,7 @@ footer .copy a span {
 }
 footer .copy p {
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin-bottom: 1rem;
 }
 footer .social {

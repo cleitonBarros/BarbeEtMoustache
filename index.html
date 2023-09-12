@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="./img//scissors-bold.svg">
+  <link rel="icon" type="image/svg+xml" href="./img/scissors-bold.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,14 +12,33 @@
     href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Josefin+Sans:wght@300;400;500;600;700&family=Lato:wght@300;400;700;900&family=Playfair+Display:wght@700&family=Poppins:wght@700&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css" />
+  <meta name="language" content="fr" />
+  <meta name="description"
+    content="est un salon de beauté axé sur les soins esthétiques masculins. Vous pouvez y obtenir des coupes de cheveux, des rasages, des soins capillaires, des soins de la peau, des soins des ongles et des séances de peinture." />
+  <meta name="keywords" content="Barbe, Moustache, Barbe Moustache, BarbeEtMoustache, cheveux" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://barbe-et-moustache.vercel.app/" />
+  <meta property="og:title" content="Barbe et moustache" />
+  <meta property="og:description"
+    content="est un salon de beauté axé sur les soins esthétiques masculins. Vous pouvez y obtenir des coupes de cheveux, des rasages, des soins capillaires, des soins de la peau, des soins des ongles et des séances de peinture." />
+  <meta property="og:image" content="./img/picture_3.jpg" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://barbe-et-moustache.vercel.app/" />
+  <meta property="twitter:title" content="Barbe et moustache" />
+  <meta property="twitter:description"
+    content="est un salon de beauté axé sur les soins esthétiques masculins. Vous pouvez y obtenir des coupes de cheveux, des rasages, des soins capillaires, des soins de la peau, des soins des ongles et des séances de peinture." />
+  <meta property="twitter:image" content="./img/picture_3.jpg" />
 
-  <title>barbe et moustache</title>
+  <title>Barbe et moustache</title>
 </head>
 
 <body>
   <header id="header" class="header">
     <nav class="header-nav">
-      <a title="logo" href="#" class="header-nav-logo">Barbe<span>Et</span>Moustache.</a>
+      <h1>
+        <a title="logo" href="#" class="header-nav-logo">Barbe<span>Et</span>Moustache.</a>
+      </h1>
       <ul>
         <li><a href="#home">Accueil</a></li>
         <li><a href="#about">À propos </a></li>
@@ -31,7 +50,7 @@
     <img class="menu-hamburger" src="./img/list.svg" alt="menu hamburguer" title="menu hamburguer" />
     <img class="menu-close" src="./img/x.svg" alt="close" title="fechar" />
 
-    <div class="sidebar">
+    <menu class="sidebar">
       <a title="logo" href="#">Barbe<span>Et</span>Moustache.</a>
       <ul>
         <li><a href="#home">Accueil</a></li>
@@ -39,22 +58,24 @@
         <li><a href="#service">Services</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </div>
+    </menu>
   </header>
   <main>
-    <section id="home" class="container">
-      <div class="image">
-        <img src="./img/picture_1.jpg" alt="homem coranto cabelo" />
-      </div>
-      <div class="text">
-        <h2 class="title">Santé naturelle pour</br>
-          vos cheveux,votre barbe </br>
-          et votre peau</h2>
-        <p class="paragraph">
-          Un barbier exclusif à Marseille, spécialisé dans les soins naturels
-        </p>
-        <a class="botao" href="#contact">Réserver un rendez-vous</a>
-      </div>
+    <section id="home">
+      <article class="container">
+        <picture class="image">
+          <img src="./img/picture_1.jpg" alt="homem coranto cabelo" />
+        </picture>
+        <aside class="text">
+          <h2 class="title">Santé naturelle pour</br>
+            vos cheveux,votre barbe </br>
+            et votre peau</h2>
+          <p class="paragraph">
+            Un barbier exclusif à Marseille, spécialisé dans les soins naturels
+          </p>
+          <a class="botao" href="#contact">Réserver un rendez-vous</a>
+        </aside>
+      </article>
     </section>
     <section class="enable-animation">
       <div class="marquee">
@@ -73,27 +94,31 @@
       </div>
     </section>
     <section id="about" class="container">
-
-      <div class="text">
-        <h2 class="title">À propos de nous</h2>
-        <p class="paragraph">
-          Chez BarbeEtMoustache, notre dévouement envers l'art de la barbe et de la moustache est inégalé. Guidés par
-          une passion profonde, notre équipe de barbiers chevronnés et d'experts en soins capillaires s'engage à
-          sublimer chaque aspect de ces attributs masculins iconiques.
-        </p>
-        <p class="paragraph">
-          Chaque homme porte sa barbe d'une manière unique,
-          et c'est pourquoi nous offrons une approche personnalisée, allant des coupes soignées aux styles plus
-          audacieux, en veillant toujours à réaliser la vision de nos clients.
-        </p>
-        <p class="paragraph">
-          Nous sommes votre partenaire dévoué pour magnifier votre style facial, offrant à la fois des soins de qualité
-          supérieure et une communauté où vous pouvez vous épanouir en exprimant fièrement votre individualité.
-        </p>
-      </div>
-      <div class="image img-2">
+      <article class="text">
+        <header>
+          <h2 class="title">À propos de nous</h2>
+        </header>
+        <section>
+          <p class="paragraph">
+            Chez BarbeEtMoustache, notre dévouement envers l'art de la barbe et de la moustache est inégalé. Guidés par
+            une passion profonde, notre équipe de barbiers chevronnés et d'experts en soins capillaires s'engage à
+            sublimer chaque aspect de ces attributs masculins iconiques.
+          </p>
+          <p class="paragraph">
+            Chaque homme porte sa barbe d'une manière unique,
+            et c'est pourquoi nous offrons une approche personnalisée, allant des coupes soignées aux styles plus
+            audacieux, en veillant toujours à réaliser la vision de nos clients.
+          </p>
+          <p class="paragraph">
+            Nous sommes votre partenaire dévoué pour magnifier votre style facial, offrant à la fois des soins de
+            qualité
+            supérieure et une communauté où vous pouvez vous épanouir en exprimant fièrement votre individualité.
+          </p>
+        </section>
+      </article>
+      <picture class="image img-2">
         <img src="./img/picture_3.jpg" alt="" />
-      </div>
+      </picture>
     </section>
     <section class="enable-animation reverse">
       <div class="marquee">
@@ -112,33 +137,36 @@
       </div>
     </section>
     <section id="service" class="container">
+      <article>
 
-      <div class="text">
-        <h2 class="title">Services</h2>
-        <p class="paragraph">
-          Avec plus de 10 ans sur le marché, <strong>Barbe<span>Et</span>Moustache</strong> a déjà conquit des clients
-          de pays grâce à des traitements
-          exclusifs et totalement naturels.
-        </p>
-      </div>
-      <div class="cards">
-        <div class="card">
-          <img src="./img/hair-cutting.png" alt="">
-          <h2>Thérapie capillaire</h2>
-          <p>Étude des cheveux, du cuir chevelu et des poils pour traiter et maintenir leur santé.</p>
-        </div>
-        <div class="card">
-          <img src="./img/tesoura-e-pente.png" alt="">
-          <h2>Coupes</h2>
-          <p> Coupes de cheveux modernes et classiques, coloration et pose de perruques.</p>
-        </div>
-        <div class="card">
-          <img src="./img/shampoo-para-animais-de-estimacao.png" alt="">
-          <h2>Traitement</h2>
-          <p>Traitement de renforcement capillaire contre le froid pour la barbe et traitement de la chute des cheveux.
+        <aside class="text">
+          <h2 class="title">Services</h2>
+          <p class="paragraph">
+            Avec plus de 10 ans sur le marché, <strong>Barbe<span>Et</span>Moustache</strong> a déjà conquit des clients
+            de pays grâce à des traitements
+            exclusifs et totalement naturels.
           </p>
-        </div>
-      </div>
+        </aside>
+        <menu class="cards">
+          <div class="card">
+            <img src="./img/hair-cutting.png" alt="">
+            <h2>Thérapie capillaire</h2>
+            <p>Étude des cheveux, du cuir chevelu et des poils pour traiter et maintenir leur santé.</p>
+          </div>
+          <div class="card">
+            <img src="./img/tesoura-e-pente.png" alt="">
+            <h2>Coupes</h2>
+            <p> Coupes de cheveux modernes et classiques, coloration et pose de perruques.</p>
+          </div>
+          <div class="card">
+            <img src="./img/shampoo-para-animais-de-estimacao.png" alt="">
+            <h2>Traitement</h2>
+            <p>Traitement de renforcement capillaire contre le froid pour la barbe et traitement de la chute des
+              cheveux.
+            </p>
+          </div>
+        </menu>
+      </article>
     </section>
     <section class="enable-animation">
       <div class="marquee">
@@ -156,54 +184,55 @@
         </ul>
       </div>
     </section>
-    <section style="height: 300px;  background-image: url('./img/picture_2.jpg');    
+    <picture style="height: 300px;  background-image: url('./img/picture_2.jpg');    
     background-position: center ;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: brown;" class="banner container">
-    </section>
-    <section id="contact" class="container">
+    </picture>
+    <section id="contact">
+      <article class="container">
+        <aside class="text">
+          <h2 class="title">Contactez-nous</h2>
+          <p class="paragraph">Entrez en contact avec BarbeEtMoustache, nous voulons dissiper vos doutes, entendre vos
+            critiques et
+            suggestions.</p>
+          <a class="botao" href="https://api.whatsapp.com/send/?phone=+33939391489 text&app_absent=0">Entrez en
+            contact</a>
+        </aside>
 
-      <div class="text">
-        <h2 class="title">Contactez-nous</h2>
-        <p class="paragraph">Entrez en contact avec BarbeEtMoustache, nous voulons dissiper vos doutes, entendre vos
-          critiques et
-          suggestions.</p>
-        <a class="botao" href="https://api.whatsapp.com/send/?phone=+33939391489 text&app_absent=0">Entrez en
-          contact</a>
-      </div>
-
-      <div class="adress paragraph">
-        <p>(93) 939 1489</p>
-        <p>Nº83 Rue Saint-Sébastien, Marseille, France</p>
-        <p>barbeetmoustachecontact@hotmail.com</p>
-      </div>
-
+        <adress class="adress paragraph">
+          <p>(93) 939 1489</p>
+          <p>Nº83 Rue Saint-Sébastien, Marseille, France</p>
+          <p>barbeetmoustachecontact@hotmail.com</p>
+        </adress>
+      </article>
     </section>
   </main>
-  <footer class="container">
-    <div class="copy">
-      <a href="#home">Barbe<span>Et</span>Moustache.</a>
-      <p>©2021 BarbeEtMoustache </p>
-      <p>Todos os direitos reservados.</p>
-      <p> Feito por 🏳️‍🌈
-        <a href="https://github.com/cleitonBarros" target="_blank" rel="noreferrer">
-          Cleiton Barros
+  <footer>
+    <article class="container">
+      <aside class="copy">
+        <a href="#home">Barbe<span>Et</span>Moustache.</a>
+        <p>©2021 BarbeEtMoustache </p>
+        <p>Todos os direitos reservados.</p>
+        <p> Feito por 🏳️‍🌈
+          <a href="https://github.com/cleitonBarros" target="_blank" rel="noreferrer">
+            Cleiton Barros
+          </a>
+        </p>
+      </aside>
+      <adress class="social">
+        <a href="https://instagram.com" target="_blank">
+          <img src="./img/instagram-logo.svg" alt="">
         </a>
-      </p>
-    </div>
-    <div class="social">
-      <a href="https://instagram.com" target="_blank">
-        <img src="./img/instagram-logo.svg" alt="">
-      </a>
-      <a href="https://facebook.com" target="_blank">
-        <img src="./img/facebook-logo.svg" alt="">
-      </a>
-      <a href="https://youtube.com.br" target="_blank">
-        <img src="./img/youtube-logo.svg" alt="">
-      </a>
-    </div>
-
+        <a href="https://facebook.com" target="_blank">
+          <img src="./img/facebook-logo.svg" alt="">
+        </a>
+        <a href="https://youtube.com.br" target="_blank">
+          <img src="./img/youtube-logo.svg" alt="">
+        </a>
+      </adress>
+    </article>
   </footer>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="./script/main.js"></script>
